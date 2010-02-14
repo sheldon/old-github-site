@@ -12,10 +12,12 @@ h1{
   float:left;
   margin:20px;
 }
-.navigation li{
+.navigation a{
   font-size:123.1%;
   float:left;
-  margin:10px;
+  margin:20px 10px;
+  color:#000;
+  text-decoration:none;
 }
 
 #fast360{

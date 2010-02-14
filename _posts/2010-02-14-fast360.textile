@@ -1,6 +1,7 @@
+---
 layout: default
 title: fast360
--
+---
 Here's something I've been working on recently that I thought warranted making a blog over, so here goes my first post. It's a javascript & flash implementation of a 360 degree rotator using normal turntable-style photography.
 
 <ul id="fast360">

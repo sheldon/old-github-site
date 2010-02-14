@@ -2,12 +2,13 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="/styles.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen" charset="utf-8" />
   <title>Sheldon Els</title>
 </head>
 <body>
   {{ content }}
-  <script type="text/javascript">
+  <script src="http://www.google.com/jsapi"></script>
+  <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-13010341-1']);
     _gaq.push(['_trackPageview']);
@@ -16,6 +17,8 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
     })();
+    google.load("jquery", "1");
   </script>
+  <script src="/scripts/app.js"></script>
 </body>
 </html>

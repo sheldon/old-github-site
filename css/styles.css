@@ -8,6 +8,7 @@ body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-s
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 
 #header{
+  box-shadow:-10px 0 10px 0;
   -moz-box-shadow:-10px 0 10px 0;
 }
 #header a{

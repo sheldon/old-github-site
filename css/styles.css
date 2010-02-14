@@ -13,13 +13,13 @@ body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-s
 #header a{
   font-size:123.1%;
   float:left;
-  margin:22px 10px;
+  margin:20px 10px;
   color:#000;
   text-decoration:none;
 }
 #header h1 a{
   font-size:153.9%;
-  margin:20px;
+  margin:17px;
 }
 
 #content{margin:20px;}

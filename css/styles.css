@@ -7,6 +7,9 @@ body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-s
 /* End hide from IE Mac */ 
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 
+#header{
+  -moz-box-shadow:-10px 0 10px 0;
+}
 h1{
   font-size:153.9%;
   float:left;
@@ -15,7 +18,7 @@ h1{
 .navigation a{
   font-size:123.1%;
   float:left;
-  margin:20px 10px;
+  margin:22px 10px;
   color:#000;
   text-decoration:none;
 }

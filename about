@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="/styles.css" type="text/css" media="screen" charset="utf-8" />
+  <title>Sheldon Els - About</title>
+</head>
+<body>
+  <h1>Sheldon Els</h1>
+  <p>I was born in Johannesburg and raised across South Africa (Johannesburg, Cape Town and Durban). I studied computer science and mathematics at Rhodes University. I left the sunny skies of home to move to the UK in 2007, where I now live in Birmingham.</p>
+  <h2>Projects</h2>
+  <p>Most of the stuff I actively develop in my free time can be found on my <a href="http://github.com/sheldon">github account</a>. I work for <a href="http://oneblackbear.com">One Black Bear</a> making websites and applications. I enjoy working on animation code, the challenge of making computer generated motion look natural.</p>
+  <script src="http://www.google.com/jsapi"></script>
+  <script>google.load("jquery", "1");</script>
+  <script src="/app.js"></script>
+</body>
+</html>

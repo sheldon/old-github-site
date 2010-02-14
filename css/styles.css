@@ -10,7 +10,7 @@ body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-s
 #header{
   -moz-box-shadow:-10px 0 10px 0;
 }
-h1{
+h1 a{
   font-size:153.9%;
   float:left;
   margin:20px;

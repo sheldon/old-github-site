@@ -23,9 +23,8 @@ h1 a{
   text-decoration:none;
 }
 
-#content{
-  margin:20px;
-}
+#content{margin:20px;}
+p{margin:10px 0;}
 
 #fast360{
   width:400px;

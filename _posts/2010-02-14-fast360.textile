@@ -71,10 +71,11 @@ jQuery(document).ready(function(){
   });
 
   jQuery("#fast360").replaceWith(fast360_markup);
-
+  console.log(fast360_images);
   //wait for flash to expose the init function
   var f_slow = setInterval(function(){
     var flash_obj = jQuery("object object")[0];
+    console.log(flash_obj.init_360);
     if(typeof(flash_obj.init_360) == "function"){
       clearInterval(f_slow);
       flash_obj.init_360(fast360_images);

@@ -65,22 +65,29 @@ Edit: If you're on webkit, sorry that this doesn't work currently. It seems the 
 
 <script>
 jQuery(document).ready(function(){
-  var fast360_markup = '<div id="fast360"><object type="application/x-shockwave-flash" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%"><param name="movie" value="/flash/fast360.swf" /><param name="swliveconnect" value="true" /><param name="AllowScriptAccess" value="always" /><!--[if !IE]>--><object type="application/x-shockwave-flash" data="/flash/fast360.swf" width="100%" height="100%"><param name="swliveconnect" value="true" /><param name="AllowScriptAccess" value="always" /><!--<![endif]--><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a><!--[if !IE]>--></object><!--<![endif]--></object></div>';
-  var fast360_images = [];
+  var images = [];
 
-  jQuery("#fast360 li a").each(function(){
-    fast360_images.push(jQuery(this).attr("href"));
+  jQuery("li a").each(function(){
+    images.push(jQuery(this).attr("href"));
   });
 
-  jQuery("#fast360").replaceWith(fast360_markup);
+	var flashvars = {};
+	var params = {
+	  swliveconnect:"true",
+	  allowscriptaccess:"always"
+	};
+	var attributes = {
+	  id:"fast360_flash"
+	};
+	swfobject.embedSWF("/flash/fast360.swf", "fast360", "100%", "100%", "8.0.0", false, flashvars, params, attributes);
+
   //wait for flash to expose the init function
   var f_slow = setInterval(function(){
     var flash_obj = jQuery("object object")[0];
     if(!flash_obj) flash_obj = jQuery("object")[0];
     if(typeof flash_obj.init_360 == "function"){
       clearInterval(f_slow);
-      flash_obj.init_360(fast360_images);
+      flash_obj.init_360(images);
     }
   }, 50);
-});
-</script>
+});</script>

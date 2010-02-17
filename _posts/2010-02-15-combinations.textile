@@ -1,0 +1,24 @@
+---
+layout: default
+title: All Possible Combinations of a Set
+---
+I recently had need of a way to get all the possible combinations of a set of things. Making a dynamic download choice for a new web framework I'm working on, but serving the website from a static site on github. This means allowing any combination of plugins for people to download of this framework would mean needing to generate all possible combinations of the plugins into zip files. This can be quite a daunting task, e.g.
+
+Choosing 1 out of 3 possible plugins gives you 3 posibilities. Choosing 2 out of the 3 gives you another 3 posibilities (for the set a,b,c we can choose a,b or b,c or a,c). Choosing 3 out of 3 gives you only 1 possibility. Adding these together means 7 configuration possibilities in total for 3 choosable plugins.
+
+For 1 possible plugin there are 2 possible download choices. For 2 possible plugins, 4 downloads. And so on, as shown by this list:
+
+<ul>
+  <li>1 : 2</li>
+  <li>2 : 4</li>
+  <li>3 : 8</li>
+  <li>4 : 16</li>
+  <li>5 : 32</li>
+  <li>6 : 64</li>
+  <li>7 : 128</li>
+  <li>8 : 256</li>
+  <li>9 : 512</li>
+  <li>10 : 1024</li>
+</ul>
+
+While knowing the possibilities is 1 thing, actually creating a set with each possibility encoded is even harder. Luckily I found a <a href="http://compprog.wordpress.com/2007/10/17/generating-combinations-1/">great article</a> about it, thanks for the clarification scvalex. I've ported this algorithm to php for my own use, and <a href="/downloads/combinations.php">here it is for download</a> if anyone should ever need it, help yourself.

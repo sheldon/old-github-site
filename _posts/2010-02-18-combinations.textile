@@ -22,3 +22,22 @@ For 1 possible plugin there are 2 possible download choices. For 2 possible plug
 </ul>
 
 While knowing the possibilities is 1 thing, actually creating a set with each possibility encoded is even harder. Luckily I found a <a href="http://compprog.wordpress.com/2007/10/17/generating-combinations-1/">great article</a> about it, thanks for the clarification scvalex. I've ported this algorithm to php for my own use, and <a href="/downloads/combinations.php">here it is for download</a> if anyone should ever need it, help yourself.
+
+Here's an example of the kind of thing you can do with it: for the set (1,2,3,4) all possible combinations are:
+
+()
+(1)
+(2)
+(3)
+(4)
+(1,2)
+(1,3)
+(1,4)
+(2,3)
+(2,4)
+(3,4)
+(1,2,3)
+(1,2,4)
+(1,3,4)
+(2,3,4)
+(1,2,3,4)

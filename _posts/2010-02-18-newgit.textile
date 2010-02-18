@@ -1,0 +1,7 @@
+---
+layout: default
+title: Git 1.7 OSX Installer
+---
+Git 1.7 is out, yay! A great list of new/changed stuff, which you can find <a href="http://www.kernel.org/pub/software/scm/git/docs/RelNotes-1.7.0.txt">here</a>.
+
+Normally I install my version using the <a href="http://code.google.com/p/git-osx-installer/">OSX installer</a> put together by Tim Harper. Unfortunately he hasn't built the latest version just yet, so <a href="/downloads/git-1.7.0-intel-leopard.dmg">here's a build</a> I did using the same scripts for those OSX users who don't want to wait or install manually.
